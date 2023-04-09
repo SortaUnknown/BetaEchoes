@@ -2,7 +2,7 @@
 
 namespace BetaEchoes
 {
-    [BepInPlugin("HelloThere.BetaEchoes", "Beta Echoes", "1.0")]
+    [BepInPlugin("HelloThere.BetaEchoes", "Beta Echoes", "1.1")]
     public class BetaEchoes : BaseUnityPlugin
     {
         public void OnEnable()
