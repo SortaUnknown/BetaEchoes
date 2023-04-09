@@ -12,6 +12,7 @@ namespace BetaEchoes
 
         static void GhostEventPatch(On.GhostConversation.orig_AddEvents orig, GhostConversation self)
         {
+            if (self.ghost.room.game.GetStorySession.saveStateNumber == MoreSlugcats.MoreSlugcatsEnums.SlugcatStatsName.Saint) return;
             switch(self.id.value)
             {
                 case "Ghost_CC":
